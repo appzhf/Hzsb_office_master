@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--第三方框架-->
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference"/>
+        <attr name="cpb_selectorComplete" format="reference"/>
+        <attr name="cpb_selectorError" format="reference"/>
+        <attr name="cpb_textComplete" format="string"/>
+        <attr name="cpb_textIdle" format="string"/>
+        <attr name="cpb_textError" format="string"/>
+        <attr name="cpb_textProgress" format="string"/>
+        <attr name="cpb_colorProgress" format="color"/>
+        <attr name="cpb_colorIndicator" format="color"/>
+        <attr name="cpb_colorIndicatorBackground" format="color"/>
+        <attr name="cpb_iconError" format="reference"/>
+        <attr name="cpb_iconComplete" format="reference"/>
+        <attr name="cpb_cornerRadius" format="dimension"/>
+        <attr name="cpb_paddingProgress" format="dimension"/>
+    </declare-styleable>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <!--分类列表style-->
+    <style name="imageView_style">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">50dp</item>
+    </style>
+
+    <!--PullToZoomScrollViewEx用到的样式-->
+    <style name="customMineTextBlackGray" >
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_littleDark</item>
+    </style>
+    <style name="line">
+        <item name="android:background">@color/cpb_white</item>
+    </style>
+    <style name="line_vertical" parent="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="line_horizontal" parent="line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="Chart"/>
+
+
+    chartFragment布局用到的style
+    <style name="Chart.TagDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+    <style name="Chart.Save">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="Chart.Lable">
+        <item name="android:layout_width">106dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:textSize">@dimen/fab_margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+</resources>

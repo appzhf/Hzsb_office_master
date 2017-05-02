@@ -1,0 +1,28 @@
+<resources>
+    <!--主页string-->
+    <string name="app_name">杭水ERP系统</string>
+    <string name="company">杭州水表有限公司</string>
+    <string name="telephone">400-108-1616</string>
+
+    <!--bottombar标题栏-->
+    <string name="product">Products</string>
+    <string name="recents">首页</string>
+    <string name="favorites">服务</string>
+    <string name="nearby">监测</string>
+    <string name="friends">个人</string>
+    <string name="foods">Foods</string>
+
+    <!-- 提示信息-->
+    <string name="checkNetWork">请检查网络连接！！！</string>
+    <string name="mobile.input.isnull">账号或者密码为空！！！</string>
+    <string name="mobile.check.isError">登录失败，请检查账号或者密码！！！</string>
+
+    <!--refrreshableView用到的信息-->
+    <!-- ScrollView -->
+    <string name="hello">下拉可刷新 </string>
+    <string name="refresh_down_text">下拉可刷新</string>
+    <string name="refresh_release_text">松开可刷新</string>
+    <string name="toast_text">下拉刷新完毕</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+</resources>

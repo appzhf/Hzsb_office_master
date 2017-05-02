@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middlePadding"
+        android:background="@color/color_littleDark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customMineTextBlackGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/middlePadding"
+            android:layout_marginTop="@dimen/middlePadding"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/smallerPadding"
+            android:drawableTop="@drawable/ic_c_consumen"
+            android:gravity="center_horizontal"
+            android:text="个人消息栏"
+            android:textColor="@color/color_littleBlack" />
+
+        <TextView
+            style="@style/customMineTextBlackGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/middlePadding"
+            android:layout_marginTop="@dimen/middlePadding"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/smallerPadding"
+            android:drawableTop="@drawable/ic_c_atten"
+            android:gravity="center_horizontal"
+            android:text="数据关注榜"
+            android:textColor="@color/color_littleBlack" />
+
+        <TextView
+            style="@style/customMineTextBlackGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/middlePadding"
+            android:layout_marginTop="@dimen/middlePadding"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/smallerPadding"
+            android:drawableTop="@drawable/ic_c_consumptions"
+            android:gravity="center_horizontal"
+            android:text="数据查阅表"
+            android:textColor="@color/color_littleBlack" />
+
+        <TextView
+            style="@style/customMineTextBlackGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/middlePadding"
+            android:layout_marginTop="@dimen/middlePadding"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/smallerPadding"
+            android:drawableTop="@drawable/ic_c_thenew"
+            android:gravity="center_horizontal"
+            android:text="最新服务类"
+            android:textColor="@color/color_littleBlack"
+            android:id="@+id/textView4"/>
+
+        <TextView
+            style="@style/customMineTextBlackGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/middlePadding"
+            android:layout_marginTop="@dimen/middlePadding"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/smallerPadding"
+            android:drawableTop="@drawable/ic_c_region"
+            android:gravity="center_horizontal"
+            android:text="查阅进度块"
+            android:textColor="@color/color_littleBlack" />
+
+
+    </LinearLayout>
+</LinearLayout>

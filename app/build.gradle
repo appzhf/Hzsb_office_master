@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.administrator.hzsb_office_master"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        jackOptions {
+            enabled true
+        }
+    }
+    compileOptions {
+        encoding "GBK"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    testCompile 'junit:junit:4.12'
+    /*加载interface库*/
+    compile project(':hzsb_office_interface')
+    compile project(':okhttputils')
+    /*依赖注入*/
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    /*bottom-bar导入依赖*/
+    compile 'com.roughike:bottom-bar:1.3.3'
+    /*异步响应式注入,gson的retfofit已经内置
+        1，Rxjava库
+        2，RxAndroid库
+        3，Retrofit适配Rxjava的库
+        4，Retrofit库
+        5，Retrofit适配Gson的库（添加了这个库后不用再添加Gson库，因为已经内置）
+        6，rxpermissions库
+        7，rxbinding库*/
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
+    compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
+    /*okhttp请求注入*/
+    compile 'com.squareup.okhttp3:okhttp:3.+'
+    /*gson依赖导入*/
+    compile 'com.google.code.gson:gson:2.6.2'
+    /*roolviewpager轮播依赖导入*/
+    compile 'com.jude:rollviewpager:1.4.5'
+    /*依赖导入*/
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.yolanda.nohttp:nohttp:1.1.0'
+    compile 'com.yanzhenjie.nohttp:okhttp:1.1.0'
+    compile files('libs/achartengine-1.1.0.jar')
+}

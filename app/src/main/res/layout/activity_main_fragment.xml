@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <com.jude.rollviewpager.RollPagerView
+                    android:id="@+id/rollPagerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:rollviewpager_play_delay="3000"
+                    android:overScrollMode="never"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#33554455" >
+                <!-- 推荐左边的小绿条的线性布局-->
+                <LinearLayout
+                    android:layout_width="12dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/colorPrimary" >
+                </LinearLayout>
+                <!-- 推荐文字和手指图片的线性布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/textView_melon_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="90dp"
+                        android:text="最新推荐"
+                        android:textColor="#8bba2a"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_melon_good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ic_launcher" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp" >
+                    <!-- 放gridView展示的大的线性布局-->
+                    <GridView
+                        android:id="@+id/office_gridView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="181dp"
+                        android:numColumns="4"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_djdzm"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="9dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最新消息"/>
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="9dp"
+                        android:background="#000000" />
+                </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

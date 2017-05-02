@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/mine_fun_all_order"
+        style="@style/customMineTextBlackGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/middlePadding"
+        android:layout_marginTop="@dimen/middlePadding"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/smallerPadding"
+        android:drawableTop="@drawable/ic_m_allorder"
+        android:gravity="center_horizontal"
+        android:text="操作信息"
+        android:textColor="@color/color_littleBlack" />
+
+    <TextView
+        android:id="@+id/mine_fun_wait_pay"
+        style="@style/customMineTextBlackGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/middlePadding"
+        android:layout_marginTop="@dimen/middlePadding"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/smallerPadding"
+        android:drawableTop="@drawable/ic_m_waitpay"
+        android:gravity="center_horizontal"
+        android:text="查阅信息"
+        android:textColor="@color/color_littleBlack" />
+
+    <TextView
+        android:id="@+id/mine_fun_wait_receive"
+        style="@style/customMineTextBlackGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/middlePadding"
+        android:layout_marginTop="@dimen/middlePadding"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/smallerPadding"
+        android:drawableTop="@drawable/ic_m_shouhuo"
+        android:gravity="center_horizontal"
+        android:text="订阅消息"
+        android:textColor="@color/color_littleBlack" />
+
+    <TextView
+        android:id="@+id/mine_fun_payback"
+        style="@style/customMineTextBlackGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/middlePadding"
+        android:layout_marginTop="@dimen/middlePadding"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/smallerPadding"
+        android:drawableTop="@drawable/ic_m_tk"
+        android:gravity="center_horizontal"
+        android:text="服务生成"
+        android:textColor="@color/color_littleBlack" />
+
+    <TextView
+        android:id="@+id/mine_fun_evaluate"
+        style="@style/customMineTextBlackGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/middlePadding"
+        android:layout_marginTop="@dimen/middlePadding"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/smallerPadding"
+        android:drawableTop="@drawable/ic_m_evaluate"
+        android:gravity="center_horizontal"
+        android:text="服务评价"
+        android:textColor="@color/color_littleBlack" />
+
+</LinearLayout>

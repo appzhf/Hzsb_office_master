@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--bottombar颜色-->
+    <color name="color_recents">#FF4081</color>
+    <color name="color_favorites">#03168e</color>
+    <color name="color_nearby">#f4aa09</color>
+    <color name="color_friends">#059e03</color>
+    <!--animation用到的颜色-->
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#3F51B5</color>
+    <color name="cpb_blue_dark">#3F51B5</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+    <color name="chartreuse_light">#2ECC71</color>
+    <color name="color_littleDark">#9c9f9d</color>
+    <color name="color_littleBlack">#111312</color>
+    <color name="grey_btn_stroke_color_pressed">#ff9e9e9e</color>
+    <color name="grey_btn_color_pressed">#ffd8d8d8</color>
+    <color name="transparent_cus_5f">#5f000000</color>
+    <color name="transparent_cus_2f">#2f000000</color>
+
+</resources>

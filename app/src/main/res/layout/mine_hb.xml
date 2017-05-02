@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middlePadding"
+        android:background="@color/color_littleDark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/largePadding"
+        android:minHeight="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/largePadding"
+            android:drawableRight="@drawable/ic_m_arr_inhan"
+            android:gravity="center_vertical"
+            android:text="进入设置页面"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杭州水表"
+            android:textColor="#3c3d3e"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView3"/>
+
+    </RelativeLayout>
+
+    <View style="@style/line_vertical" />
+
+    <LinearLayout
+        android:id="@+id/m_t_board_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mine_hb_availablemoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textColor="@color/color_littleDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/smallerPadding"
+                android:text="查阅记录"
+                android:textColor="@color/color_littleDark"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/largePadding"
+            android:layout_marginTop="@dimen/largePadding" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mine_hb_frozenmoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="233"
+                android:textColor="@color/color_littleDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/smallerPadding"
+                android:text="消息推送"
+                android:textColor="@color/color_littleDark"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mine_hb_bankno_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/color_littleDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/smallerPadding"
+                android:text="权限管理"
+                android:textColor="@color/color_littleDark"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/largePadding"
+            android:layout_marginTop="@dimen/largePadding" />
+
+    </LinearLayout>
+</LinearLayout>
+
+            
